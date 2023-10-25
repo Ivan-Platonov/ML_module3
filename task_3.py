@@ -13,3 +13,17 @@ print('Задача 3. Следующее и предыдущее числа')
 # Введите число: 5
 # После числа 5 идет число 6
 # До числа 5 идет число 4
+
+user_number = ''
+
+print('')
+while user_number.strip() == '':
+  user_number = input('Введите число: ')
+print('')
+
+print('После числа ' + user_number + ' идет число ' +
+      str(int(user_number) + 1))
+print('До числа ' + user_number + ' идет число ' + str(int(user_number) - 1))
+
+#Почему не завершается код - остается перманентно запущенным?
+exit()
